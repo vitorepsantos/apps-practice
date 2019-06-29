@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "413e341c-cb22-4ec0-8e79-e50bfa9aabd9",
+		"name": "bank-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/account/transfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountOrigin\": {\n\t\t\"branch\":\"001\",\n\t\t\"number\":\"1247\",\n\t\t\"digit\":\"0\"\n\t},\n\t\"accountDestination\": {\n\t\t\"branch\":\"001\",\n\t\t\"number\":\"1246\",\n\t\t\"digit\":\"0\"\n\t},\n\t\"amount\":\"900.00\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/account/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/account/deposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"account\": {\n\t\t\"branch\":\"001\",\n\t\t\"number\":\"1247\",\n\t\t\"digit\":\"0\"\n\t},\n\t\"amount\":\"900.95\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/account/deposit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/account/balances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/account/balances",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"balances"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
