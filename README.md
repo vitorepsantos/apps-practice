@@ -1,1 +1,1 @@
-# apps-examples
+# apps-practice
