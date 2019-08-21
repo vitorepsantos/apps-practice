@@ -1,1 +1,2 @@
-# apps-practice
+# Practice
+Collection of simple code practices
